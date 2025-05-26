@@ -1,0 +1,76 @@
+.hidden {
+    display: none;
+}
+
+#messageTab {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#messageTab .message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#messageTab .message-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#messageTab #messageHeading {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#messageTab #messageText {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#messageTab #messageButton {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#messageTab #messageButton.success {
+    background-color: #003C43;
+    color: #fff;
+}
+
+#messageTab #messageButton.error {
+    background-color: #f44336;
+}
+
+#messageTab #messageButton.success:hover {
+    background-color: transparent;
+    border: 1px solid #003C43;
+    color: #003C43;
+    transition: 0.3s ease;
+}
+
+#messageTab #messageButton.error:hover {
+    background-color: #e53935;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
