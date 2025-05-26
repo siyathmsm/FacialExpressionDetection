@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4BA59B;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #77B0AA;
+    padding: 10px;
+    color: #003C43;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbar .nav-links .active a {
+    color: #E3FEF7; 
+}
+
+.navbar .nav-links .active a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px; 
+}
+
+.navbar .nav-links a:hover:not(.active) {
+    color: #E3FEF7;
+}
+
+.navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #E3FEF7;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover:not(.active)::after {
+    width: 100%;
+}
+
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .nav-right img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.session {
+    border: 1px solid #ddd;
+    color: #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.session:hover {
+    background-color: #f0f0f0;
+    color: #003C43;
+    text-decoration: none;
+}
+
+.session h3 {
+    margin: 0 0 10px;
+}
+
+.session p {
+    margin: 5px 0;
+}
+
+.container-4 label{
+    font-size: 15px;
+  }
+  h1 {
+    margin: 5px 0 0 -22px;
+    display: inline-block;
+    width: 200px;
+    overflow-wrap: break-word;
+    font-weight: 800;
+    font-size: 20px;
+    color: #003C43; 
+  }
+
+  .sub:hover {
+    opacity: 0.8;
+  }
+  p {
+    margin-top: 3px;
+    margin-left: 150px;
+    font-size: 15px;
+  }
+  p a { 
+    text-decoration: none;
+    font-size: 15px;
+  }
+  p a:hover {
+    color: #77B0AA;
+  }
+  .form-group a {
+    float: right;
+    color: #003C43;
+    text-decoration: none;
+  }
+  .form-group a:hover {
+    color: #77B0AA;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"]
+   {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #77B0AA;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:#77B0AA;
+    margin-left: 15px;
+  }
+  
+  input[type="checkbox"]{
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .lec-login .group-1 {   /*close button*/
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    margin-top: 2px;
+  }
+  .lec-login .container-5 {        /*forget password, login button, register*/
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 310px;
+    box-sizing: border-box;
+  }
+  .lec-login .form-group {   /*form-content*/
+    mix-blend-mode: darken;
+    position: relative;
+    margin: 5px 2px;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;  
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .lec-login .form-group label {
+    margin-left: 40px;
+  }
+  a {        /*forget password, close, register, hover link of dropdown*/
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #003C43;
+    margin-left: 1px;
+  }
+  .lec-login .sub {   /*login button*/
+    border-radius: 15px;
+    background: linear-gradient(180deg, #003C43, #038392);
+    position: relative;
+    margin-bottom: 15px;
+    padding: 2px 0 8px 0;
+    width: 450px;
+    box-sizing: border-box;
+    height: 35px;
+    margin-left: 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    color: #77B0AA;
+  }
+  .lec-login .container-3 {  /*form content*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: -5px;
+  }
+
+  .lec-login .container-7 { /*navbar*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .lec-login .group-2 {   /*form box*/
+    box-shadow: inset 39px -39px 39px 0px rgba(165, 165, 165, 0.1), inset -39px 39px 39px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(39px);
+    border-radius: 20px;
+    border: 1px solid #003C43;
+    background: rgba(217, 217, 217, 0.1);
+    position: relative;
+    display: flex;
+    padding: 10px 12px;
+    width: 600px;
+    height: 350px;
+    box-sizing: border-box;
+    margin-top: 100px;
+  }

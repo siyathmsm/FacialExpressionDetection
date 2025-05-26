@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.main-content {
+    flex: 1;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar {
+    width: 25%;
+    height: 90%;
+    background-color: #f4f4f4;
+    padding: 2px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+.sidebar.active {
+    display: block; 
+}
+.resizer {
+    width: 5px;
+    background: #000;
+    cursor: ew-resize;
+    position: absolute;
+    top: 0;
+    left: -2.5px;
+    height: 100%;
+}
+.section {
+    display: none; /* Hide sections initially */
+}
+.section.active {
+    display: block; /* Show active section */
+}
+#localVideo {
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 480px;
+    background: #000;
+}
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    transform: scale(1.2);
+    display: flex;
+    gap: 10px;
+    transform: translateX(-200px);
+}
+button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#leaveButton {
+    background: #de0505;
+}
+#leaveButton:hover {
+    background: #87313e;
+}
+#participantsList, #chatArea {
+    display: none;
+    font-family: fangsong;
+}
+#participantsList.active, #chatArea.active {
+    display: block;
+}
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+#chatInput {
+    width: calc(100% - 60px);
+    padding: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,229 @@
+.lec-login .login-2 {  /*login text*/
+  font-weight: 700;
+  font-size: 20px;
+  color: #003C43;
+  text-align: center;
+  margin: 5px 8px;
+  top: -5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.lec-login .polygon-2 {  /*dropdown icon*/
+  margin: 0 20px;
+  width: 42px;
+  height: 32px;
+}
+.lec-login .btn {
+  border-radius: 14px;
+  border: 1px solid #003C43;
+  background: #92C9C3;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0 10px 0;
+  width: 130px;
+  height: 45px;
+  box-sizing: border-box;
+  top: -110px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 1000px;
+}
+.lec-login .container-1 {    /*navbar box*/
+  background: #77B0AA;
+  height: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  width: 1300px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.lec-login .container-7 { /*navbar*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 20px 19.5px 0 80px;
+  display: inline-block;
+  width: 234.5px;
+  overflow-wrap: break-word;
+  font-weight: 800;
+  font-size: 20px;
+  color: #003C43; 
+}
+.sub:hover {
+  opacity: 0.8;
+}
+p {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+p a { 
+  text-decoration: none;
+}
+p a:hover {
+  color: #77B0AA;
+}
+.form-group a {
+  float: right;
+  color: #003C43;
+  text-decoration: none;
+}
+.form-group a:hover {
+  color: #77B0AA;
+}
+input[type="text"],
+input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #77B0AA;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:#77B0AA;
+  margin-left: 35px;
+}
+.lec-login .group-1 {   /*close button*/
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
+.lec-login .container-5 {        /*forget password, login button, register*/
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 295px;
+  box-sizing: border-box;
+}
+.lec-login .form-group {   /*form-content*/
+  mix-blend-mode: darken;
+  position: relative;
+  margin: 10px 2px;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;  
+}
+a {        /*forget password, close, register, hover link of dropdown*/
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #003C43;
+}
+.lec-login .sub {   /*login button*/
+  border-radius: 15px;
+  background: linear-gradient(180deg, #003C43, #038392);
+  position: relative;
+  margin-bottom: 10px;
+  padding: 2px 0 8px 0;
+  width: 250px;
+  box-sizing: border-box;
+  height: 35px;
+  margin-top: 30px;
+  margin-left: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #77B0AA;
+}
+.lec-login .container-3 {  /*form content*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.lec-login .lock {
+  background: url('images/lock_1.png') 50% / contain no-repeat;
+  position: absolute;
+  top: 200px;
+  right: 290px;
+  width: 25px;
+  height: 25px;
+}
+.lec-login .user {
+  background: url('images/user.png') 50% / contain no-repeat;
+  position: absolute;
+  top: 125px;
+  right: 290px;
+  width: 25px;
+  height: 25px;
+}
+.lec-login .group-2 {   /*form box*/
+  box-shadow: inset 39px -39px 39px 0px rgba(165, 165, 165, 0.1), inset -39px 39px 39px 0px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(39px);
+  border-radius: 20px;
+  border: 1px solid #003C43;
+  background: rgba(217, 217, 217, 0.1);
+  position: relative;
+  display: flex;
+  padding: 12px 13px 0 13px;
+  width: 350px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.lec-login .logo {
+  background: url('images/logo.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 55px;
+  top: -17px;
+  width: 90px;
+  height: 88px;
+}
+.lec-login .code-warriors {
+  position: absolute;
+  left: 130px;
+  top: 20px;
+  overflow-wrap: break-word;
+  font-weight: 800;
+  font-size: 18px;
+  color: #003C43;
+}
+.lec-login {           /*whole background*/
+  background: #4BA59B;
+  display: flex;
+  width: 1300px;
+  box-sizing: border-box;
+  height: 605px;
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4BA59B;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px 003C43(0,0,0,0.2);
+  border: 1px solid #003C43;
+  top: -70px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #003C43;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .btn {background-color: #003C43;}
+.dropdown:hover .login-2 {color: #4BA59B;}

@@ -1,0 +1,103 @@
+.home-screen .rectangle-4 {
+  border-radius: 14px;
+  border: 1px solid #003C43;
+  background: #92C9C3;
+  position:relative;
+  top: -15px;
+  right: 105px;
+  width: 150px;
+  height: 40px;
+  margin-right: -139px;
+  cursor: pointer;
+}
+.home-screen .login-1 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  font-size: 20px;
+  color: #003C43;
+  font-family: 'Times New Roman', Times, serif;
+}
+.home-screen .gs {
+  border-radius: 15px;
+  background: #92C9C3;
+  position: relative;
+  padding: 12px 5px 10px 20px;
+  width: 150px;
+  height: 45px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  margin: 105px 0 254px 180px;
+  border: 1px solid #003C43;
+  font-family: 'Times New Roman', Times, serif;
+}
+.home-screen .login {
+  background: #77B0AA;
+  position: relative;
+  margin-bottom: 125px;
+  display: flex;
+  padding: 22px 125px 0.1px 1165px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.home-screen .welcome {
+  margin: 2px 0 60px 490px;
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 50px;
+  color: #003C43;
+}
+.home-screen .bgimg {
+  background: url('../templates/images/background.png') 50% / cover no-repeat;
+  margin-right: 52px;
+  width: 350px;
+  height: 450px;
+  margin-top: -100px;
+}
+.home-screen .container-1 {
+  margin: -150px 150px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: 954px;
+  box-sizing: border-box;
+}
+.home-screen .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.home-screen .logo {
+  background: url('images/logo.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 65px;
+  top: -12px;
+  width: 95px;
+  height: 93px;
+}
+.home-screen .code-warriors {
+  position: absolute;
+  left: 155px;
+  top: 30px;
+  overflow-wrap: break-word;
+  font-weight: 800;
+  font-size: 18px;
+  color: #003C43;
+}
+.home-screen {
+  background: #4BA59B;
+  display: flex;
+  margin-bottom: 0;
+  width: 1300px;
+  box-sizing: border-box;
+  height: 610px;
+  border-radius: 14px;
+}

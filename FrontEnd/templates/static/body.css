@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+   
+}
+
+.sidebar {
+    width: 25%;
+    height: 90%;
+    background-color: #f4f4f4;
+    padding: 2px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.resizer {
+    width: 5px;
+    background: #000;
+    cursor: ew-resize;
+    position: absolute;
+    top: 0;
+    left: -2.5px;
+    height: 100%;
+}
+
+/* Video container styles */
+#localVideo, #remoteVideo {
+    width: 100%;
+    height: 90%;
+}
+
+/*#videoContainer {
+    flex: 1;
+    width: 75%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+#localVideo {
+    height: 90%;
+    width: 100%;
+    background: #000;
+}*/
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 42%;
+    transform: scale(1.2);
+    display: flex;
+    gap: 10px;
+    transform: translateX(-200px);
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#leaveButton {
+    background: #de0505;
+}
+#leaveButton:hover {
+    background: #87313e;
+}
+
+#activityButton {
+    background: #720254;
+}
+#activityButton:hover {
+    background: #a41b6e;
+}
+
+/* Drop-up button styles */
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+
+
+#participantsList, #chatArea {
+    display: none;
+    font-family: fangsong;
+}
+
+#participantsList.active, #chatArea.active {
+    display: block;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+#chatInput {
+    width: calc(100% - 60px);
+    padding: 5px;
+    margin-right: 5px;
+}
+
